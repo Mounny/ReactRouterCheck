@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import AddMovie from './Components/AddMovie/AddMovie';
+import FilterByName from './Components/FilterByName/FilterByName';
 import MovieList from './Components/MovieList/MovieList';
 import { moviesData } from "./Data/Data";
 
@@ -16,8 +17,8 @@ function App() {
   return (
     <div className="App">
       <h1>NOTFLIX</h1>
-      <filterByName />
-      <MovieList movies={movies}/>
+      <FilterByName inputSearch= {inputSearch} setInputSearch={setInputSearch}/>
+      <MovieList movies={movies} inputSearch={inputSearch}/>
       <AddMovie add={add} />
     </div>
   );

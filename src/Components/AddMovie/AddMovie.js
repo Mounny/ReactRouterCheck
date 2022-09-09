@@ -78,10 +78,10 @@ const handleAdd = (e) => {
           </Form>
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
+          <Button variant="secondary" onClick={handleClose} >
             Close
           </Button>
-          <Button variant="primary" onClick={handleClose} >
+          <Button variant="primary" onClick={() => handleAdd} >
             Save Changes
           </Button>
         </Modal.Footer>

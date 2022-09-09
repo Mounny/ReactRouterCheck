@@ -1,10 +1,14 @@
 import React from 'react'
-import {form} from "react-bootstrap"
+import {Form} from "react-bootstrap"
 
-const FilterByName = () => {
+const FilterByName = ({inputSearch, setInputSearch}) => {
   return (
     <div>
-<form.control type="text" placeholder="Enter e-mail ..." />
+<Form.Control type="text" placeholder="Enter Movie title.." 
+  value={inputSearch}
+  onChange={(e) => setInputSearch(e.target.value)}
+/>
+
     </div>
   )
 }

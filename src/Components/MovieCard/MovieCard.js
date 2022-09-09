@@ -9,7 +9,13 @@ const MovieCard = ({movie}) => {
       <Card.Body>
         <Card.Title>{movie.title}</Card.Title>
         <Card.Text>{movie.description}</Card.Text>
-        <Button className='buttonn' variant="primary">Go somewhere</Button>
+        <Card.Text>{movie.rate}</Card.Text>
+        <div>
+        <Button> 
+          <a href= {movie.trailer} target={"blanck"}>Trailer</a>
+        </Button>
+        
+        </div>
       </Card.Body>
     </Card>
 
